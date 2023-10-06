@@ -32,10 +32,6 @@ jobs:
         with:
           name: my-artifact
           path: 'build_output'
-      - name:  commit build_output 💾
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: committed build_output
       - name: Deploy to Github Pages 🚀
         uses: actions/deploy-pages@v1
         with:

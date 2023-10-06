@@ -27,6 +27,11 @@ jobs:
         with:
           path: 'build_output'
           name: gh-pages
+      - name:  Package and save artifact 📦
+        uses: actions/upload-artifact@v3
+        with:
+          name: gh-pages
+          path: output/
       - name: Deploy to Github Pages 🚀
         uses: actions/deploy-pages@v1
         with:
